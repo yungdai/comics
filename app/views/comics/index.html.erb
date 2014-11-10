@@ -1,0 +1,7 @@
+<h1>Comics!</h1>
+
+<% @comics.each do |comic| %>
+    <p><%= comic[:title] %>, <%= comic[:artist] %></p>
+    <img src="<%= comic[:url] %>">
+
+<% end %>
